@@ -1,0 +1,13 @@
+author: Bosch Sensortec GmbH
+description: BME280 sensor library
+type: lib
+version: 1.0
+
+sources:
+  - .
+tags:
+  - arduino
+  - c
+  - hw
+
+skeleton_version: 2017-05-18
