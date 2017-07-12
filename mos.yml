@@ -1,12 +1,21 @@
-author: Bosch Sensortec GmbH
+author: anyhotcountry
 description: BME280 sensor library
 type: lib
 version: 1.0
 
+libs_version: ${mos_version}
+modules_version: ${mos_version}
+mongoose_os_version: ${mos_version}
+
 sources:
   - .
+libs:
+  - origin: https://github.com/mongoose-os-libs/i2c
 tags:
-  - arduino
+  - bme280
+  - temperature
+  - humidity
+  - pressure
   - c
   - hw
 
