@@ -1,3 +1,7 @@
+# BME280 library for Mongoose OS
+
+Forked from https://github.com/BoschSensortec/BME280_driver
+
 # BME280 sensor API
 ## Introduction
 This package contains the Bosch Sensortec's BME280 pressure sensor driver (sensor API)
