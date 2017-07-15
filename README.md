@@ -2,6 +2,22 @@
 
 Forked from https://github.com/BoschSensortec/BME280_driver
 
+Example:
+
+``` c
+#include "mgos_bme280.h"
+```
+
+``` c
+sensor_data data;
+mgos_bme280_get_sensor_data(&data);
+LOG(LL_INFO, ("Temperature: %0.2f\tPressure: %0.3f kPa\tHumidity: %0.3f %%\n", data.temperature, data.pressure, data.humidity));
+```
+
+---
+
+# Information below applies to Bosch driver. Ignore for Mongoose OS.
+
 # BME280 sensor API
 ## Introduction
 This package contains the Bosch Sensortec's BME280 pressure sensor driver (sensor API)
