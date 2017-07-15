@@ -9,6 +9,7 @@ typedef struct
 {
     double temperature;
     double pressure;
+    double humidity;
 } sensor_data;
 
 bool mgos_bme280_get_sensor_data(sensor_data *data);
