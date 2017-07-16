@@ -91,6 +91,24 @@ bool mgos_bme280_get_sensor_data(sensor_data *data)
     return rslt == BME280_OK;
 }
 
+// mJS functions
+sensor_data *get_data_struct(void) {
+    static struct sensor_data data;
+    return &data;
+}
+
+double get_temperature(sensor_data *data) {
+    return data->temperature;
+}
+
+double get_pressure(sensor_data *data) {
+    return data->pressure;
+}
+
+double get_humidity(sensor_data *data) {
+    return data->humidity;
+}
+
 // Mongoose OS library init function
 bool mgos_bme280_driver_init(void)
 {
