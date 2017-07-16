@@ -3,9 +3,9 @@ let BME280 = {
 
   read: function() {
     let data = {
-		temperature: NaN,
-		pressure: NaN,
-		humidity: NaN
+		temperature: null,
+		pressure: null,
+		humidity: null
 	};
     let ok = this._gsd(data);
     return ok ? data : null;
