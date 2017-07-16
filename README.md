@@ -14,9 +14,24 @@ mgos_bme280_get_sensor_data(&data);
 LOG(LL_INFO, ("Temperature: %0.2f\tPressure: %0.3f kPa\tHumidity: %0.3f %%\n", data.temperature, data.pressure, data.humidity));
 ```
 
+JavaScript:
+
+``` javascript
+load('api_config.js');
+load('api_sys.js');
+load('api_timer.js');
+load('api_bme280.js');
+
+Timer.set(1000 /* 1 sec */, true /* repeat */, function () {
+  let sensor = BME280.read();
+  if (sensor) {
+    print('temperature:', sensor.temperature, 'humidity:', sensor.humidity);
+  }
+}, null);
+```
 ---
 
-# Information below applies to Bosch driver. Ignore for Mongoose OS.
+## Information below applies to Bosch driver. Ignore for Mongoose OS.
 
 # BME280 sensor API
 ## Introduction
