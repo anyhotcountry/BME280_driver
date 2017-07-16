@@ -93,7 +93,7 @@ bool mgos_bme280_get_sensor_data(sensor_data *data)
 
 // mJS functions
 sensor_data *get_data_struct(void) {
-    static struct sensor_data data;
+    static sensor_data data;
     return &data;
 }
 
