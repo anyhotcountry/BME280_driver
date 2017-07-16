@@ -1,5 +1,5 @@
 let BME280 = {
-  _gsd: ffi('bool mgos_bme280_get_sensor_data(sensor_data *data)'),
+  _gsd: ffi('bool mgos_bme280_get_sensor_data(void *data)'),
 
   read: function() {
     let data = {
