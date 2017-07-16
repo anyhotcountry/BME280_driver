@@ -13,9 +13,9 @@ let BME280 = {
         pressure: this._gpres(cdata),
         humidity: this._ghum(cdata)
       };
-      return datal
+      return data
     }
-    
+
     return null;
   }
 };
