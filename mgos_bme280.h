@@ -14,4 +14,8 @@ typedef struct
 
 bool mgos_bme280_get_sensor_data(sensor_data *data);
 
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
+
 #endif
