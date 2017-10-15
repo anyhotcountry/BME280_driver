@@ -1,11 +1,7 @@
 author: anyhotcountry
 description: BME280 sensor library
 type: lib
-version: 1.0
-
-libs_version: ${mos_version}
-modules_version: ${mos_version}
-mongoose_os_version: ${mos_version}
+version: 1.1
 
 sources:
   - .
@@ -19,4 +15,4 @@ tags:
   - c
   - hw
 
-skeleton_version: 2017-05-18
+manifest_version: 2017-09-29
