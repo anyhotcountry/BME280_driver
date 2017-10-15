@@ -85,9 +85,9 @@ bool mgos_bme280_get_sensor_data(sensor_data *data)
     int8_t rslt;
 
     rslt = bme280_get_sensor_data(BME280_PRESS | BME280_HUM | BME280_TEMP, &comp_data, dev);
-    data->pressure = 0.00001 * comp_data.pressure;    // kPa
-    data->temperature = 0.01 * comp_data.temperature; // deg C
-    data->humidity = 0.001 * comp_data.humidity;      // RH %
+    data->pressure = 0.0001 * comp_data.pressure;     // hPa
+    data->temperature = 0.01 * comp_data.temperature; // *C
+    data->humidity = 0.001 * comp_data.humidity;      // %RH
     return rslt == BME280_OK;
 }
 

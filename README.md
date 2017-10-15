@@ -25,7 +25,9 @@ load('api_bme280.js');
 Timer.set(1000 /* 1 sec */, true /* repeat */, function () {
   let sensor = BME280.read();
   if (sensor) {
-    print('temperature:', sensor.temperature, 'humidity:', sensor.humidity);
+    print('temperature:', sensor.temperature, '*C -- humidity:', sensor.humidity, '%RH -- pressure:', sensor.pressure, 'hPa');
+  }else{
+    print('no sensor found');
   }
 }, null);
 ```

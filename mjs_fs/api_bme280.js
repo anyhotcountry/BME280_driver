@@ -9,9 +9,9 @@ let BME280 = {
     let ok = this._gsd(cdata);
     if (ok) {
       let data = {
-        temperature: this._gtemp(cdata),
-        pressure: this._gpres(cdata),
-        humidity: this._ghum(cdata)
+        temperature: this._gtemp(cdata), // *C
+        pressure: this._gpres(cdata), // hPa
+        humidity: this._ghum(cdata) // %RH
       };
       return data
     }
